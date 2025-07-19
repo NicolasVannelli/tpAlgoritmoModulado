@@ -18,15 +18,13 @@ def input_con_asteriscos(prompt=''):
                 password += ch.decode('utf-8')
                 print('*', end='', flush=True)
     return password
-#Función para limpiar la consola
 def limpiar():
     command = 'limpiar'
     if os.name == 'nt':
         command = 'cls'
     else:
         command = 'clear'#Por si utiliza mac o linux
-    os.system(command)
-    
+    os.system(command)   
 def carteldeasteriscos(cadena):
     linea = '*' * (4 + len(cadena))
     return( Fore.GREEN + f'{linea}\n* {cadena} *\n{linea}')

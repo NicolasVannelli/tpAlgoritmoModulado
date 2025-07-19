@@ -2,6 +2,7 @@ from funcEsteticas import limpiar,carteldebarras
 from colorama import Fore,init,Style
 from datetime import datetime
 from menuCeo import vuelos,precioVuelos,matrizAsientos
+from menuAdm import ver_novedades
 
 matriz_asientos_prueba = [
     ["O", "L", "L", " ", "O", "R", "R"],
@@ -145,13 +146,13 @@ def menu_usuario():
             reservarVuelo()
         elif opcion == "4":
             limpiar()
-            reportes()
+            gestionReservas()
         elif opcion == "5":
             limpiar()
-            reportes()
+            historial()
         elif opcion == "6":
             limpiar()
-            reportes()
+            ver_novedades()
         elif opcion == "7":
             limpiar()
             print("Saliendo del sistema.")
@@ -160,15 +161,19 @@ def menu_usuario():
             limpiar()
             print("Opción inválida.")
             input("Presione enter para volver al menú anterior.")
-def gestionDePromociones():
+def gestionReservas():
     print(Fore.RED + carteldebarras("En construcción..."))
     input(Style.RESET_ALL+"Presione enter para volver al menú anterior.")
     limpiar()
-def reportes():
+def historial():
     print(Fore.RED + carteldebarras("En construcción..."))
     input(Style.RESET_ALL+"Presione enter para volver al menú anterior.")
     limpiar()
 def reservarVuelo():
+    print(Fore.RED + carteldebarras("En construcción..."))
+    input(Style.RESET_ALL+"Presione enter para volver al menú anterior.")
+    limpiar()
+def historial():
     print(Fore.RED + carteldebarras("En construcción..."))
     input(Style.RESET_ALL+"Presione enter para volver al menú anterior.")
     limpiar()
